@@ -28,6 +28,16 @@ class Fish extends Denizen {
     }
   }
 
+  eatable() {
+    if (this.isTasty) {
+      this.kill();
+    } else if(!this) {
+      throw new Error(e);
+    }
+  }
+  onClick(event) {
+    console.log(this);
+  }
   makeNewVelocity(minMag) {
     this.swimVelocity = this.generateSwimVelocity(this.maxSwimSpeed, minMag || 0);
     this.timeUntilSpeedChange = randRangeInt(5);

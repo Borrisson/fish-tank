@@ -5,6 +5,7 @@ class GoFish extends Fish {
     this.surgeSecondsLeft = 0;
     this.maxSurge = 1.0;
     this.surgMult = 3.0;
+    this.name = 'GoFish';
   }
 
   updateOneTick() {
@@ -19,6 +20,7 @@ class GoFish extends Fish {
 
 
   onClick(event) {
+    super.onClick()
     this.surgeSecondsLeft = this.maxSurge;
   }
 }

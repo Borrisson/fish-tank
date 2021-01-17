@@ -61,6 +61,8 @@ class Denizen {
     this.tank.removeDenizen(this.id, duration);
   }
 
+
+
   outOfBounds(bounds) {
     // TODO: it'd be cool if Seeds could go above the top fo the tank, then fall back down
     return (

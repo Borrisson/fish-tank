@@ -4,6 +4,7 @@ class Starter extends Denizen {
     super(options);
     this.imageUri = '/images/volcano.jpg';
     this.position.y += this.height;
+    this.name = 'Starter';
   }
 
   update(t) {
